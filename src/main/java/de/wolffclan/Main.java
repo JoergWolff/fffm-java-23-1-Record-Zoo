@@ -27,15 +27,24 @@ public class Main {
 
         System.out.println("zebra1 is equal zebra2 : " + zebra.equals(zebra2));
         System.out.println("hippo is not equal zebra2 : " + hippo.equals(zebra2));
+
+
         System.out.println("-----------");
         System.out.println("Zoo");
+        // zoo method
         Zoo zoo = new Zoo("Hagenbeck's Tierpark");
         zoo.addAnimal(zebra);
         zoo.addAnimal(zebra2);
         zoo.addAnimal(hippo);
         zoo.addAnimal(aligator);
         zoo.addAnimal(aligator2);
-
         System.out.println(zoo.name() + " hat den Futterbedarf von " + zoo.calculateFeed() + "g pro Tag");
+
+        // zoo member method
+        Zoo zoo2 = new Zoo("Serengeti");
+        zoo2.animals().add(zebra);
+        zoo.animals().add(zebra2);
+        zoo.animals().add((hippo));
+        System.out.println(zoo2.name() + " hat den Futterbedarf von " + zoo2.calculateFeed() + "g pro Tag");
     }
 }
