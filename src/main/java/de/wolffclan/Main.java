@@ -8,11 +8,16 @@ public class Main {
         Owner owner3 = new Owner("Inge", 47, "Düsseldorf");
         Owner owner4 = new Owner("Rudi", 33, "Berlin");
 
-        Animal zebra = new Animal(1,"Streifi","Horse",5, owner1);
-        Animal zebra2 = new Animal(1,"Streifi","Horse",5, null);
-        Animal hippo = new Animal(2,"Hippopotamus","Horse",3, owner3);
-        Animal aligator  = new Animal(3,"Kroko","Aligator",10, owner4);
-        Animal aligator2  = new Animal(3,"Krokofant","Aligator",4, owner2);
+        Species horses = new Species("horse", 2000);
+        Species hippos = new Species("hippos", 4050);
+        Species aligators = new Species("aligators", 3850);
+
+
+        Animal zebra = new Animal(1,"Streifi",horses,5, owner1);
+        Animal zebra2 = new Animal(1,"Streifi",horses,5, null);
+        Animal hippo = new Animal(2,"Hippopotamus",hippos,3, owner3);
+        Animal aligator  = new Animal(3,"Kroko",aligators,10, owner4);
+        Animal aligator2  = new Animal(3,"Krokofant",aligators,4, owner2);
 
         System.out.println(zebra.toString());
         System.out.println(zebra2.toString());
