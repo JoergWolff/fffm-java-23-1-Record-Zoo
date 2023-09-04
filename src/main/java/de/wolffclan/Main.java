@@ -19,11 +19,11 @@ public class Main {
         Animal aligator  = new Animal(3,"Kroko",aligators,10, owner4);
         Animal aligator2  = new Animal(3,"Krokofant",aligators,4, owner2);
 
-        System.out.println(zebra.toString());
-        System.out.println(zebra2.toString());
-        System.out.println(hippo.toString());
-        System.out.println(aligator.toString());
-        System.out.println(aligator2.toString());
+        System.out.println(zebra);
+        System.out.println(zebra2);
+        System.out.println(hippo);
+        System.out.println(aligator);
+        System.out.println(aligator2);
 
         System.out.println("zebra1 is equal zebra2 : " + zebra.equals(zebra2));
         System.out.println("hippo is not equal zebra2 : " + hippo.equals(zebra2));
